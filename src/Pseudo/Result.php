@@ -44,6 +44,7 @@ class Result
 
     public function getRows(array $params = [])
     {
+         return $this->rows;
         if ($this->params !== null && empty($params)) $params = $this->params;
         if ($params) {
             if ($this->isParameterized) {
